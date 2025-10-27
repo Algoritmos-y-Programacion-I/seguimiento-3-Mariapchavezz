@@ -1,51 +1,48 @@
-
 package model;
+
 import java.time.LocalDate;
 
-public class Incident { 
+public class Incident {
 
-    private LocalDate dateReport; 
-    private String descripcion; 
-    private boolean solucion; 
-    private int solucionHoras;
+    private LocalDate dateReport;
+    private String description;
+    private boolean solution;
+    private int solutionHours;
 
-    public incident (LocalDate dateReport, String descripcion) {
-        this.dateReport = dateReport; 
-        this.descripcion = descripcion; 
+    public Incident(LocalDate dateReport, String description) {
+        this.dateReport = dateReport;
+        this.description = description;
     }
 
     public LocalDate getDateReport() {
         return dateReport;
     }
 
-    public String getDescripcion () {
-        return descripcion;
+    public String getDescription() {
+        return description;
     }
 
-    public boolean getSolucion () {
-        return solucion;
+    public boolean getSolution() {
+        return solution;
     }
 
-    public int getSolucionHoras () {
-        return solutionHoras;
+    public int getSolutionHours() {
+        return solutionHours;
     }
 
     public void setDateReport(LocalDate dateReport) {
-        this.DateReport = dateReport; 
+        this.dateReport = dateReport;
     }
 
-    public void setDescripcion(String descriptcion) {
-        this.Descripcion = descripcion; 
+    public void setDescription(String description) {
+        this.description = description;
     }
 
-    public void setSolucion(boolean solucion){
-        this.Solucion = solucion;
+    public void setSolution(boolean solution) {
+        this.solution = solution;
     }
 
-    public void setSolutionHours(int solucionHours) {
-        this.SolucionHours = solucionHours;
+    public void setSolutionHours(int solutionHours) {
+        this.solutionHours = solutionHours;
     }
-}
-﻿
-    
 }
